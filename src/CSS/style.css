@@ -1,3 +1,59 @@
+/*BASIC CUSTOM CLASSES*/
+/*WIDTH*/
+.width-100{
+  width: 100%;
+}
+
+.width-75{
+  width: 75%;
+}
+
+.width-50{
+  width: 50%;
+}
+
+.width-25{
+  width: 25%;
+}
+
+/*POSITION*/
+.centered-text{
+  text-align: center;
+}
+
+.centered-element{
+  margin: auto;
+}
+
+/*MARGIN & PADDING*/
+.padding-standard-H{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/*CUSTOM CLASSES*/
+.content-column{
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  background-color: white;
+}
+
 .border-red{
   border: 2px red solid;
+}
+
+.btn-link{
+  background-color: #e4e4e4;
+}
+.btn-link:hover{
+  background-color: lightgrey;
+}
+
+/*TARGETED CLASSES*/
+body{
+  background-color: grey;
+  background-image: url("./Ressources/background.png");
+  background-image: url("../Ressources/background.png");
+  background-size: 20%;
 }
