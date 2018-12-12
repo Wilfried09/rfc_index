@@ -1,12 +1,16 @@
 function resizing(){
+  console.log("Oww ça bouge !");
   document.getElementById("column-hook").style.height=window.innerHeight+'px';
+  if(window.innerWidth <= 768){
+    console.log("Oww ça tangue !");
+    document.getElementById("column-hook").style.width=window.innerWidth+'px';
+  }else{
+      document.getElementById("column-hook").style.width='60%';
+  }
 }
 
 function errors(data){
-  console.log('Erreur')
-  console.log(data)
-
-
+  console.log('Error !')
 }
 function success(data) {
   console.log("Success !");
@@ -35,13 +39,10 @@ function getJSON(path, success, error){
 
 function createNav(data){;
   let result = "" ;
-  var nav = data.index.linkFiches;
-  console.log("nav : "+nav);
+  var nav = data.fiches.linkFiches;
   for(var obj in nav){
-    console.log(nav[obj]);
     result = ''+result+"<a href='"+nav[obj].link+"'><span class='btn btn-link'>"+nav[obj].name+"</span></a>";
   }
-  console.log(result);
   document.getElementById("nav").innerHTML=result;
 }
 

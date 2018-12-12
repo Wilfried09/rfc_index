@@ -5,9 +5,14 @@
       <link rel="stylesheet" href="./CSS/style.css"/>
       <link rel="icon" href="./Ressources/favicon.ico" />
 			<meta charset="UTF-8">
-      <script src="./JS/javascript.js"></script>
+      <script src="./JS/javascript.js">
+
+      </script>
       <title>RFC - INDEX</title>
   </head>
+  <script type="text/javascript">
+    window.onresize = function(event){resizing();};
+  </script>
   <body onload="resizing(); getJSON('./JSON/fiche.json', success, errors);">
     <div id="column-hook" class="content-column">
       <div>
