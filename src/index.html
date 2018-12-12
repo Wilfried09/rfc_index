@@ -8,7 +8,7 @@
       <title>RFC - INDEX</title>
   </head>
   <body onload="resizing();">
-    <div id="column-hook" class="content-column">
+    <div id="column-hook" class="content-column" onmousedown="getJSON('./JSON/fiche.json', function(data) { console.log(data); }, function(xhr) { console.error(xhr); });">
       <div>
         <div class="title-headband">
           <a href="./index.html" title="Retour à l'accueil">
