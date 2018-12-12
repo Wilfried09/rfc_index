@@ -12,6 +12,10 @@
   width: 50%;
 }
 
+.width-40{
+  width: 40%;
+}
+
 .width-25{
   width: 25%;
 }
@@ -26,6 +30,11 @@
 }
 
 /*MARGIN & PADDING*/
+.margin-standard-V{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .padding-standard-H{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -33,27 +42,168 @@
 
 /*CUSTOM CLASSES*/
 .content-column{
+  position: relative;
   width: 60%;
   height: 100%;
   margin: auto;
-  background-color: white;
+  padding-bottom: 1rem;
+  background-color: grey;
+  border-right: 1px white solid;
+  border-left: 1px white solid;
+  color: white;
 }
 
-.border-red{
-  border: 2px red solid;
+.special-h2{
+  font-size: 130%;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  background-color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.logo-size:hover{
+  width: 40.5%;
+}
+
+.title-headband{
+  text-align: center;
+  background-color: black;
+  padding: 1rem 0;
 }
 
 .btn-link{
   background-color: #e4e4e4;
 }
 .btn-link:hover{
-  background-color: lightgrey;
+  background-color: white;
+}
+.btn-link:active{
+  background-color: #717171;
+  color: white;
+}
+
+/*BACKGROUND COLOR*/
+.bg-black{
+  background-color: black;
 }
 
 /*TARGETED CLASSES*/
 body{
-  background-color: grey;
+  background-color: #4e4e4e;
   background-image: url("./Ressources/background.png");
   background-image: url("../Ressources/background.png");
+  background-position: bottom;
   background-size: 20%;
+  background-attachment: fixed;
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+.surhead{
+  margin-bottom: 1rem;
+  background-color: lightgrey;
+}
+
+nav{
+  background-color: #525252;
+  padding: 0.5rem 0;
+  border-top: 1px grey solid;
+}
+
+header{
+  background-color: #ff6060;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+header p{
+  margin-bottom: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
+h1{
+  font-size: 130%;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  background-color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+h2{
+  font-size: 110%;
+  font-weight: bold;
+  border-bottom: 1px black solid;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+h3{
+  font-size: 110%;
+  width: 100%;
+  padding-left: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+article{
+  width: 100%;
+}
+
+section{
+  width: 100%;
+}
+
+section p{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+address, pre{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
+footer{
+  margin: auto auto 0 auto;
+  text-align: center;
+  width: 100%;
+  background-color: #ff6060;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  body{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .content-column{
+    width: 100%;
+    opacity : 0.85;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
 }

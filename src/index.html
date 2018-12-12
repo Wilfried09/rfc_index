@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
       <link rel="stylesheet" href="../CSS/bootstrap.css"/>
       <link rel="stylesheet" href="./CSS/style.css"/>
+			<meta charset="UTF-8">
+      <script src="./JS/javascript.js"></script>
       <title>RFC - INDEX</title>
   </head>
-  <body>
-    <div class="content-column">
+  <body onload="resizing();">
+    <div id="column-hook" class="content-column">
       <div>
-        <div class="centered-text">
-          <a href="./index.html">
-            <h1>RFC Pathfinder</h1>
+        <div class="title-headband">
+          <a href="./index.html" title="Retour à l'accueil">
+            <img class="logo-size width-40" src="./Ressources/logo.png" alt="RFC Pathfinder">
           </a>
         </div>
         <nav class="width-100 padding-standard-H d-flex flex-row justify-content-between">
-          <a href="./Files/RFC1149.html"><button class="btn btn-link">RFC 1149</button></a>
-          <a href="./Files/RFC2549.html"><button class="btn btn-link">RFC 2549</button></a>
-          <a href="./Files/RFC6214.html"><button class="btn btn-link">RFC 6214</button></a>
+          <a href="./Files/RFC1149.html"><span class="btn btn-link">RFC 1149</span></a>
+          <a href="./Files/RFC2549.html"><span class="btn btn-link">RFC 2549</span></a>
+          <a href="./Files/RFC6214.html"><span class="btn btn-link">RFC 6214</span></a>
         </nav>
       </div>
       <footer class="centered-text width-100">
-        <span>Wilfried DIAS</span>
+        <span>©Wilfried DIAS</span>
       </footer>
     </div>
   </body>

@@ -1,0 +1,9 @@
+{
+  "general":{
+    "head":"<!DOCTYPE html><html><head><link rel='stylesheet' href='../CSS/bootstrap.css'/><link rel='stylesheet' href='./CSS/style.css'/><script src='./JS/javascript.js'></script><title>RFC - INDEX</title></head>"
+  },
+  "1149":{
+    "tab":"RFC 1149 - Standard for the transmission of IP datagrams on avian carriers",
+    "title": "A Standard for the Transmission of IP Datagrams on Avian Carriers"
+  }
+}
