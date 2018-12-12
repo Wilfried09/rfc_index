@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <link rel="stylesheet" href="../CSS/bootstrap.css"/>
+      <link rel="stylesheet" href="./CSS/bootstrap.css"/>
       <link rel="stylesheet" href="./CSS/style.css"/>
+      <link rel="icon" href="./Ressources/favicon.ico" />
 			<meta charset="UTF-8">
       <script src="./JS/javascript.js"></script>
       <title>RFC - INDEX</title>
   </head>
-  <body onload="resizing();">
-    <div id="column-hook" class="content-column" onmousedown="getJSON('./JSON/fiche.json', function(data) { console.log(data); }, function(xhr) { console.error(xhr); });">
+  <body onload="resizing(); getJSON('./JSON/fiche.json', success, errors);">
+    <div id="column-hook" class="content-column">
       <div>
         <div class="title-headband">
           <a href="./index.html" title="Retour à l'accueil">
             <img class="logo-size width-40" src="./Ressources/logo.png" alt="RFC Pathfinder">
           </a>
         </div>
-        <nav class="width-100 padding-standard-H d-flex flex-row justify-content-between">
-          <a href="./Files/RFC1149.html"><span class="btn btn-link">RFC 1149</span></a>
-          <a href="./Files/RFC2549.html"><span class="btn btn-link">RFC 2549</span></a>
-          <a href="./Files/RFC6214.html"><span class="btn btn-link">RFC 6214</span></a>
-        </nav>
+        <nav id="nav" class="width-100 padding-standard-H d-flex flex-row justify-content-between"></nav>
       </div>
       <footer class="centered-text width-100">
         <span>©Wilfried DIAS</span>
