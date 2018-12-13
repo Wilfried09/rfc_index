@@ -3,11 +3,12 @@
 	<head>
 			<link rel="stylesheet" href="../../CSS/bootstrap.css"/>
 			<link rel="stylesheet" href="../CSS/style.css"/>
+			<link rel="icon" href="../Ressources/favicon.ico" />
 			<script src="../JS/javascript.js"></script>
 			<meta charset="UTF-8">
 			<title>RFC 1149 - Standard for the transmission of IP datagrams on avian carriers</title>
 	</head>
-	<body>
+	<body onload="getJSON('../JSON/fiche.json', success, errors);">
 		<div class="content-column">
 			<header>
 				<div class="surhead">
@@ -16,11 +17,7 @@
 	            <img class="logo-size width-40" src="../Ressources/logo.png" alt="RFC Pathfinder">
 	          </a>
 	        </div>
-	        <nav class="width-100 padding-standard-H d-flex flex-row justify-content-between">
-	          <a href="./RFC1149.html"><span class="btn btn-link">RFC 1149</span></a>
-	          <a href="./RFC2549.html"><span class="btn btn-link">RFC 2549</span></a>
-	          <a href="./RFC6214.html"><span class="btn btn-link">RFC 6214</span></a>
-	        </nav>
+	        <nav id="nav" class="width-100 padding-standard-H d-flex flex-row justify-content-between"></nav>
 				</div>
 				<p>Network Working Group</p>
 				<p>Request for Comments: 1149</p>
