@@ -17,6 +17,6 @@ function getJSON(path, success, error){
             }
         }
     };
-    xhr.open("GET", Chrome.extension.getURL(path), true);
+    xhr.open("GET", path, true);
     xhr.send();
 }
