@@ -30,7 +30,7 @@
         "link":"./RFC6214.html"
       }
     },
-    "1149":{
+    "rfc1149":{
       "id":"1149",
       "name": "RFC 1149",
       "tab": "RFC 1149 - Standard for the transmission of IP datagrams on avian carriers",
@@ -40,39 +40,139 @@
         "D. Waitzman BBN STC 1 April 1990"
       ],
       "article":{
-        "title1": "A Standard for the Transmission of IP Datagrams on Avian Carriers",
-        "sections":[
-          {"title2": "Status of this Memo",
-          "paragraphe" : "This memo describes an experimental method for the encapsulation of IP datagrams in avian carriers. This specification is primarily useful in Metropolitan Area Networks. This is an experimental, not recommended standard.  Distribution of this memo is unlimited."},
+        "title": "A Standard for the Transmission of IP Datagrams on Avian Carriers",
+        "section":{
+          "section1":[
+            {"title2": "Status of this Memo",
+            "paragraphe" : "This memo describes an experimental method for the encapsulation of IP datagrams in avian carriers. This specification is primarily useful in Metropolitan Area Networks. This is an experimental, not recommended standard.  Distribution of this memo is unlimited."
+            }
+          ],
+          "section2":[
+            {"title2": "Overview and Rational",
+            "paragraphe" : "Avian carriers can provide high delay, low throughput, and low altitude service.  The connection topology is limited to a single point-to-point path for each carrier, used with standard carriers, but many carriers can be used without significant interference with each other, outside of early spring. This is because of the 3D ether space available to the carriers, in contrast to the 1D ether used by IEEE802.3.  The carriers have an intrinsic collision avoidance system, which increases availability. Unlike some network technologies, such as packet radio, communication is not limited to line-of-sight distance. Connection oriented service is available in some cities, usually based upon a central hub topology."},
 
-          {"title2": "Overview and Rational",
-          "paragraphe" : "Avian carriers can provide high delay, low throughput, and low altitude service.  The connection topology is limited to a single point-to-point path for each carrier, used with standard carriers, but many carriers can be used without significant interference with each other, outside of early spring. This is because of the 3D ether space available to the carriers, in contrast to the 1D ether used by IEEE802.3.  The carriers have an intrinsic collision avoidance system, which increases availability. Unlike some network technologies, such as packet radio, communication is not limited to line-of-sight distance. Connection oriented service is available in some cities, usually based upon a central hub topology."},
+            {"title2": "Frame Format",
+            "paragraphe" : "The IP datagram is printed, on a small scroll of paper, in hexadecimal, with each octet separated by whitestuff and blackstuff. The scroll of paper is wrapped around one leg of the avian carrier. A band of duct tape is used to secure the datagram's edges. The bandwidth is limited to the leg length.  The MTU is variable, and paradoxically, generally increases with increased carrier age. A typical MTU is 256 milligrams. Some datagram padding may be needed. Upon receipt, the duct tape is removed and the paper copy of the datagram is optically scanned into a electronically transmittable form."
+            },
 
-          {"title2": "Frame Format",
-          "paragraphe" : "The IP datagram is printed, on a small scroll of paper, in hexadecimal, with each octet separated by whitestuff and blackstuff. The scroll of paper is wrapped around one leg of the avian carrier. A band of duct tape is used to secure the datagram's edges. The bandwidth is limited to the leg length.  The MTU is variable, and paradoxically, generally increases with increased carrier age. A typical MTU is 256 milligrams. Some datagram padding may be needed. Upon receipt, the duct tape is removed and the paper copy of the datagram is optically scanned into a electronically transmittable form."
-          },
+            {"title2": "Discussion",
+            "paragraphe": "Multiple types of service can be provided with a prioritized pecking order. An additional property is built-in worm detection and eradication.  Because IP only guarantees best effort delivery, loss of a carrier can be tolerated.  With time, the carriers are self-regenerating. While broadcasting is not specified, storms can causedata loss. There is persistent delivery retry, until the carrierdrops. Audit trails are automatically generated, and can often befound on logs and cable trays."
+            },
 
-          {"title2": "Discussion",
-          "paragraphe": "Multiple types of service can be provided with a prioritized pecking order. An additional property is built-in worm detection and eradication.  Because IP only guarantees best effort delivery, loss of a carrier can be tolerated.  With time, the carriers are self-regenerating. While broadcasting is not specified, storms can causedata loss. There is persistent delivery retry, until the carrierdrops. Audit trails are automatically generated, and can often befound on logs and cable trays."
-          },
-
-          {"title2": "Security Considerations",
-          "paragraphe": "Security is not generally a problem in normal operation, but special measures must be taken (such as data encryption) when avian carriers are used in a tactical environment."
-          },
-        ]
-      },
-      "2549":{
-        "id":"2549",
-        "name": "RFC 2549",
-        "tab": "RFC 2549 - IP over Avian Carriers with Quality of Service",
-        "title": "IP over Avian Carriers with Quality of Service"
-      },
-      "6214":{
-        "id":"6214",
-        "name": "RFC 6214",
-        "tab": "RFC 6214 - Adaptation of RFC 1149 for IPv6",
-        "title": "Adaptation of RFC 1149 for IPv6"
+            {"title2": "Security Considerations",
+            "paragraphe": "Security is not generally a problem in normal operation, but special measures must be taken (such as data encryption) when avian carriers are used in a tactical environment."
+            }
+          ]
+        },
+        "carnetAdresse":{
+          "title": "Author's Address",
+          "adresse":[
+            "David Waitzman",
+            "BBN Systems and Technologies Corporation",
+            "BBN Labs Division",
+            "10 Moulton Street",
+						"Cambridge, MA 02238",
+						"Phone: (617) 873-4323",
+						"E-Mail: dwaitzman@BBN.COM"
+          ]
+        }
       }
-    }
+    },
+    "2549":{
+      "id":"1149",
+      "name": "RFC 1149",
+      "tab": "RFC 1149 - Standard for the transmission of IP datagrams on avian carriers",
+      "header":[
+        "Network Working Group",
+        "Request for Comments: 1149",
+        "D. Waitzman BBN STC 1 April 1990"
+      ],
+      "article":{
+        "title": "A Standard for the Transmission of IP Datagrams on Avian Carriers",
+        "section":{
+          "section1":[
+            {"title2": "Status of this Memo",
+            "paragraphe" : "This memo describes an experimental method for the encapsulation of IP datagrams in avian carriers. This specification is primarily useful in Metropolitan Area Networks. This is an experimental, not recommended standard.  Distribution of this memo is unlimited."
+            }
+          ],
+          "section2":[
+            {"title2": "Overview and Rational",
+            "paragraphe" : "Avian carriers can provide high delay, low throughput, and low altitude service.  The connection topology is limited to a single point-to-point path for each carrier, used with standard carriers, but many carriers can be used without significant interference with each other, outside of early spring. This is because of the 3D ether space available to the carriers, in contrast to the 1D ether used by IEEE802.3.  The carriers have an intrinsic collision avoidance system, which increases availability. Unlike some network technologies, such as packet radio, communication is not limited to line-of-sight distance. Connection oriented service is available in some cities, usually based upon a central hub topology."},
+
+            {"title2": "Frame Format",
+            "paragraphe" : "The IP datagram is printed, on a small scroll of paper, in hexadecimal, with each octet separated by whitestuff and blackstuff. The scroll of paper is wrapped around one leg of the avian carrier. A band of duct tape is used to secure the datagram's edges. The bandwidth is limited to the leg length.  The MTU is variable, and paradoxically, generally increases with increased carrier age. A typical MTU is 256 milligrams. Some datagram padding may be needed. Upon receipt, the duct tape is removed and the paper copy of the datagram is optically scanned into a electronically transmittable form."
+            },
+
+            {"title2": "Discussion",
+            "paragraphe": "Multiple types of service can be provided with a prioritized pecking order. An additional property is built-in worm detection and eradication.  Because IP only guarantees best effort delivery, loss of a carrier can be tolerated.  With time, the carriers are self-regenerating. While broadcasting is not specified, storms can causedata loss. There is persistent delivery retry, until the carrierdrops. Audit trails are automatically generated, and can often befound on logs and cable trays."
+            },
+
+            {"title2": "Security Considerations",
+            "paragraphe": "Security is not generally a problem in normal operation, but special measures must be taken (such as data encryption) when avian carriers are used in a tactical environment."
+            }
+          ]
+        },
+        "carnetAdresse":{
+          "title": "Author's Address",
+          "adresse":[
+            "David Waitzman",
+            "BBN Systems and Technologies Corporation",
+            "BBN Labs Division",
+            "10 Moulton Street",
+						"Cambridge, MA 02238",
+						"Phone: (617) 873-4323",
+						"E-Mail: dwaitzman@BBN.COM"
+          ]
+        }
+      }
+    },
+    "6214":{
+      "id":"1149",
+      "name": "RFC 1149",
+      "tab": "RFC 1149 - Standard for the transmission of IP datagrams on avian carriers",
+      "header":[
+        "Network Working Group",
+        "Request for Comments: 1149",
+        "D. Waitzman BBN STC 1 April 1990"
+      ],
+      "article":{
+        "title": "A Standard for the Transmission of IP Datagrams on Avian Carriers",
+        "section":{
+          "section1":[
+            {"title2": "Status of this Memo",
+            "paragraphe" : "This memo describes an experimental method for the encapsulation of IP datagrams in avian carriers. This specification is primarily useful in Metropolitan Area Networks. This is an experimental, not recommended standard.  Distribution of this memo is unlimited."
+            }
+          ],
+          "section2":[
+            {"title2": "Overview and Rational",
+            "paragraphe" : "Avian carriers can provide high delay, low throughput, and low altitude service.  The connection topology is limited to a single point-to-point path for each carrier, used with standard carriers, but many carriers can be used without significant interference with each other, outside of early spring. This is because of the 3D ether space available to the carriers, in contrast to the 1D ether used by IEEE802.3.  The carriers have an intrinsic collision avoidance system, which increases availability. Unlike some network technologies, such as packet radio, communication is not limited to line-of-sight distance. Connection oriented service is available in some cities, usually based upon a central hub topology."},
+
+            {"title2": "Frame Format",
+            "paragraphe" : "The IP datagram is printed, on a small scroll of paper, in hexadecimal, with each octet separated by whitestuff and blackstuff. The scroll of paper is wrapped around one leg of the avian carrier. A band of duct tape is used to secure the datagram's edges. The bandwidth is limited to the leg length.  The MTU is variable, and paradoxically, generally increases with increased carrier age. A typical MTU is 256 milligrams. Some datagram padding may be needed. Upon receipt, the duct tape is removed and the paper copy of the datagram is optically scanned into a electronically transmittable form."
+            },
+
+            {"title2": "Discussion",
+            "paragraphe": "Multiple types of service can be provided with a prioritized pecking order. An additional property is built-in worm detection and eradication.  Because IP only guarantees best effort delivery, loss of a carrier can be tolerated.  With time, the carriers are self-regenerating. While broadcasting is not specified, storms can causedata loss. There is persistent delivery retry, until the carrierdrops. Audit trails are automatically generated, and can often befound on logs and cable trays."
+            },
+
+            {"title2": "Security Considerations",
+            "paragraphe": "Security is not generally a problem in normal operation, but special measures must be taken (such as data encryption) when avian carriers are used in a tactical environment."
+            }
+          ]
+        },
+        "carnetAdresse":{
+          "title": "Author's Address",
+          "adresse":[
+            "David Waitzman",
+            "BBN Systems and Technologies Corporation",
+            "BBN Labs Division",
+            "10 Moulton Street",
+						"Cambridge, MA 02238",
+						"Phone: (617) 873-4323",
+						"E-Mail: dwaitzman@BBN.COM"
+          ]
+        }
+      }
+    },
   }
 }

@@ -8,21 +8,20 @@
 			<meta charset="UTF-8">
 			<title>RFC 6214 - Adaptation of RFC 1149 for IPv6</title>
 	</head>
-	<body>
-		<div class="content-column">
-			<header>
-				<div class="surhead">
-					<div class="title-headband">
-	          <a href="../index.html" title="Retour à l'accueil">
-	            <img class="logo-size width-40" src="../Ressources/logo.png" alt="RFC Pathfinder">
-	          </a>
-	        </div>
-					<nav class="width-100 padding-standard-H d-flex flex-row justify-content-between">
-						<a href="./RFC1149.html"><span class="btn btn-link">RFC 1149</span></a>
-						<a href="./RFC2549.html"><span class="btn btn-link">RFC 2549</span></a>
-						<a href="./RFC6214.html"><span class="btn btn-link">RFC 6214</span></a>
-					</nav>
+	<script type="text/javascript">
+		window.onresize = function(event){resizing();};
+	</script>
+	<body onload="resizing(); checkPage();">
+		<div id="column-hook" class="content-column">
+			<div class="surhead">
+				<div class="title-headband">
+					<a href="../index.html" title="Retour à l'accueil">
+						<img class="logo-size width-40" src="../Ressources/logo.png" alt="RFC Pathfinder">
+					</a>
 				</div>
+				<nav id="nav" class="width-100 padding-standard-H d-flex flex-row justify-content-between"></nav>
+			</div>
+			<header>
 				<p>Independent Submission</p>
 				<p>Request for Comments: 6214</p>
 				<p>Category: Informational</p>
@@ -339,8 +338,7 @@
 						PB 92019<br>
 						Auckland,   1142<br>
 						New Zealand<br>
-
-						EMail: brian.e.carpenter@gmail.com<br>
+						E-Mail: brian.e.carpenter@gmail.com<br>
 					</address>
 					<address>
 						Robert M. Hinden<br>

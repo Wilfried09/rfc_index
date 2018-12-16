@@ -8,90 +8,22 @@
 			<meta charset="UTF-8">
 			<title>RFC 1149 - Standard for the transmission of IP datagrams on avian carriers</title>
 	</head>
-	<body onload="getJSON('../JSON/fiche.json', success, errors);">
-		<div class="content-column">
-			<header>
-				<div class="surhead">
-					<div class="title-headband">
-	          <a href="../index.html" title="Retour à l'accueil">
-	            <img class="logo-size width-40" src="../Ressources/logo.png" alt="RFC Pathfinder">
-	          </a>
-	        </div>
-	        <nav id="nav" class="width-100 padding-standard-H d-flex flex-row justify-content-between"></nav>
+	<script type="text/javascript">
+		window.onresize = function(event){resizing();};
+	</script>
+	<body onload="resizing(); checkPage();">
+		<div id="column-hook" class="content-column">
+			<div class="surhead">
+				<div class="title-headband">
+					<a href="../index.html" title="Retour à l'accueil">
+						<img class="logo-size width-40" src="../Ressources/logo.png" alt="RFC Pathfinder">
+					</a>
 				</div>
-				<p>Network Working Group</p>
-				<p>Request for Comments: 1149</p>
-				<p>D. Waitzman
-				BBN STC
-				1 April 1990<p>
-			</header>
-			<article>
-				<h1>A Standard for the Transmission of IP Datagrams on Avian Carriers</h1>
-				<section>
-					<h2>Status of this Memo</h2>
-
-					<p>This memo describes an experimental method for the encapsulation of
-					IP datagrams in avian carriers.  This specification is primarily
-					useful in Metropolitan Area Networks.  This is an experimental, not
-					recommended standard.  Distribution of this memo is unlimited.</p>
-				</section>
-				<section>
-					<h2>Overview and Rational</h2>
-
-					<p>Avian carriers can provide high delay, low throughput, and low
-					altitude service.  The connection topology is limited to a single
-					point-to-point path for each carrier, used with standard carriers,
-					but many carriers can be used without significant interference with
-					each other, outside of early spring.  This is because of the 3D ether
-					space available to the carriers, in contrast to the 1D ether used by
-					IEEE802.3.  The carriers have an intrinsic collision avoidance
-					system, which increases availability.  Unlike some network
-					technologies, such as packet radio, communication is not limited to
-					line-of-sight distance.  Connection oriented service is available in
-					some cities, usually based upon a central hub topology.</p>
-
-					<h2>Frame Format</h2>
-
-					<p>The IP datagram is printed, on a small scroll of paper, in
-					hexadecimal, with each octet separated by whitestuff and blackstuff.
-					The scroll of paper is wrapped around one leg of the avian carrier.
-					A band of duct tape is used to secure the datagram's edges.  The
-					bandwidth is limited to the leg length.  The MTU is variable, and
-					paradoxically, generally increases with increased carrier age.  A
-					typical MTU is 256 milligrams.  Some datagram padding may be needed.
-
-					Upon receipt, the duct tape is removed and the paper copy of the
-					datagram is optically scanned into a electronically transmittable
-					form.</p>
-
-					<h2>Discussion</h2>
-
-					<p>Multiple types of service can be provided with a prioritized pecking
-					order.  An additional property is built-in worm detection and
-					eradication.  Because IP only guarantees best effort delivery, loss
-					of a carrier can be tolerated.  With time, the carriers are self-regenerating.
-					While broadcasting is not specified, storms can causedata loss.
-					There is persistent delivery retry, until the carrierdrops.
-					Audit trails are automatically generated, and can often befound on logs and cable trays.</p>
-
-					<h2>Security Considerations</h2>
-
-					<p>Security is not generally a problem in normal operation, but special
-					measures must be taken (such as data encryption) when avian carriers
-					are used in a tactical environment.</p>
-				</section>
-				<section>
-					<h2>Author's Address</h2>
-					<address>
-						David Waitzman<br>
-						BBN Systems and Technologies Corporation<br>
-						BBN Labs Division<br>
-						10 Moulton Street<br>
-						Cambridge, MA 02238<br>
-						Phone: (617) 873-4323<br>
-						E-Mail: dwaitzman@BBN.COM
-					</address>
-				</section>
+				<nav id="nav" class="width-100 padding-standard-H d-flex flex-row justify-content-between"></nav>
+			</div>
+			<header id="header"></header>
+			<article id="content">
+				
 			</article>
 			<footer>
 				<span>©Wilfried DIAS</span>
