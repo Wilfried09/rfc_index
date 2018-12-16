@@ -108,15 +108,17 @@
         },
         "carnetAdresse":{
           "title1": "Author's Address",
-          "adresse":[
-            "David Waitzman",
-            "BBN Systems and Technologies Corporation",
-            "BBN Labs Division",
-            "10 Moulton Street",
-						"Cambridge, MA 02238",
-						"Phone: (617) 873-4323",
-						"E-Mail: dwaitzman@BBN.COM"
-          ]
+          "adresse":{
+            "1":[
+              "David Waitzman",
+              "BBN Systems and Technologies Corporation",
+              "BBN Labs Division",
+              "10 Moulton Street",
+  						"Cambridge, MA 02238",
+  						"Phone: (617) 873-4323",
+  						"E-Mail: dwaitzman@BBN.COM"
+            ]
+          }
         }
       }
     },
@@ -187,14 +189,16 @@
         },
         "carnetAdresse":{
           "title1": "Author's Address",
-          "adresse":[
-            "David Waitzman",
-            "IronBridge Networks",
-            "55 Hayden Ave",
-            "Lexington, MA 02421",
-						"Phone: (781) 372-8161",
-						"E-Mail: djw@vineyard.net"
-          ]
+          "adresse":{
+            "1":[
+              "David Waitzman",
+              "IronBridge Networks",
+              "55 Hayden Ave",
+              "Lexington, MA 02421",
+  						"Phone: (781) 372-8161",
+  						"E-Mail: djw@vineyard.net"
+            ]
+          }
         },
         "copyright":{
           "title2": "Full Copyright Statement",
@@ -328,15 +332,26 @@
         },
         "carnetAdresse":{
           "title1": "Author's Address",
-          "adresse":[
-            "David Waitzman",
-            "BBN Systems and Technologies Corporation",
-            "BBN Labs Division",
-            "10 Moulton Street",
-						"Cambridge, MA 02238",
-						"Phone: (617) 873-4323",
-						"E-Mail: dwaitzman@BBN.COM"
-          ]
+          "adresse":{
+            "1":[
+            "Brian Carpenter",
+            "Department of Computer Science",
+            "University of Auckland",
+            "PB 92019",
+						"Auckland, 1142",
+						"New Zealand",
+						"EMail: brian.e.carpenter@gmail.com"
+            ],
+            "2":[
+              "Robert M. Hinden",
+              "Check Point Software Technologies, Inc.",
+              "800 Bridge Parkway",
+              "Redwood City, CA 94065",
+  						"US",
+  						"Phone: +1.650.387.6118",
+  						"E-Mail: bob.hinden@gmail.com"
+            ]
+          }
         }
       }
     }
