@@ -170,9 +170,17 @@ function createUnderSummary(data){
 
 function createAdresse(data){
   let result = '';
-  result = ''+result+'<h1>'+data.title1+'</h1><address>';
+  result = ''+result+'<h1>'+data.title1+'</h1>';
   for(i in data.adresse){
-    result = ''+result+"<p>"+data.adresse[i]+"</p>";
+    result = ''+result+"<address>"+createAdressePart(data.adresse[i])+"</address>";
+  }
+  return result;
+}
+
+function createAdressePart(data){
+  let result = '';
+  for(j in data){
+    result = ''+result+"<p>"+data[j]+"</p>";
   }
   result = ''+result+'</address>'
   return result;

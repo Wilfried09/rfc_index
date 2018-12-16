@@ -186,6 +186,14 @@ address, pre{
   margin-right: 1rem;
 }
 
+address p{
+  line-height: 0.5rem;
+}
+
+address{
+  margin: 3rem 0;
+}
+
 
 footer{
   margin: auto auto 0 auto;
