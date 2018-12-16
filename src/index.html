@@ -14,14 +14,17 @@
   <body onload="resizing(); checkPage()">
     <div id="column-hook" class="content-column">
       <div>
-        <div class="title-headband">
+        <div id="headband" class="title-headband">
           <a href="./index.html" title="Retour à l'accueil">
             <img class="logo-size width-40" src="./Ressources/logo.png" alt="RFC Pathfinder">
           </a>
         </div>
-        <nav id="nav" class="width-100 padding-standard-H d-flex flex-row justify-content-between"></nav>
+        <nav id="nav" class="width-100 d-flex flex-column">
+          <div id="navTitle" class="width-100 centered-text"></div>
+          <div id="buttons" class="width-100 padding-standard-H d-flex justify-content-between flex-wrap"></div>
+        </nav>
       </div>
-      <footer class="centered-text width-100">
+      <footer id="footer" class="centered-text width-100">
         <span>©Wilfried DIAS</span>
       </footer>
     </div>

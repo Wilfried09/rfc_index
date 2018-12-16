@@ -3,15 +3,51 @@
     "linkFiches":{
       "1149":{
         "name":"RFC 1149",
-        "link":"./Files/RFC1149.html"
+        "title": "Standard for the transmission of IP datagrams on avian carriers",
+        "link":"RFC1149",
+        "active" : true
       },
       "2549":{
         "name":"RFC 2549",
-        "link":"./Files/RFC2549.html"
+        "title": "IP over Avian Carriers with Quality of Service",
+        "link":"RFC2549",
+        "active" : true
       },
       "6214":{
         "name":"RFC 6214",
-        "link":"./Files/RFC6214.html"
+        "title": "Adaptation of RFC 1149 for IPv6",
+        "link":"RFC6214",
+        "active" : true
+      },
+      "6487":{
+        "name":"RFC 6487",
+        "title": "",
+        "link":"RFC6487",
+        "active" : false
+      },
+      "1231":{
+        "name":"RFC 1231",
+        "title": "",
+        "link":"RFC1231",
+        "active" : false
+      },
+      "4568":{
+        "name":"RFC 4568",
+        "title": "",
+        "link":"RFC4568",
+        "active" : false
+      },
+      "1643":{
+        "name":"RFC 1643",
+        "title": "",
+        "link":"RFC1643",
+        "active" : false
+      },
+      "7586":{
+        "name":"RFC 7586",
+        "title": "",
+        "link":"RFC7586",
+        "active" : false
       }
     }
   },
@@ -19,15 +55,15 @@
     "linkFiches":{
       "1149":{
         "name":"RFC 1149",
-        "link":"./RFC1149.html"
+        "link":"RFC1149"
       },
       "2549":{
         "name":"RFC 2549",
-        "link":"./RFC2549.html"
+        "link":"RFC2549"
       },
       "6214":{
         "name":"RFC 6214",
-        "link":"./RFC6214.html"
+        "link":"RFC6214"
       }
     },
     "rfc1149":{
@@ -40,7 +76,7 @@
         "D. Waitzman BBN STC 1 April 1990"
       ],
       "article":{
-        "title": "A Standard for the Transmission of IP Datagrams on Avian Carriers",
+        "title1": "A Standard for the Transmission of IP Datagrams on Avian Carriers",
         "section":{
           "section1":[
             {
@@ -71,7 +107,7 @@
           ]
         },
         "carnetAdresse":{
-          "title": "Author's Address",
+          "title1": "Author's Address",
           "adresse":[
             "David Waitzman",
             "BBN Systems and Technologies Corporation",
@@ -96,7 +132,7 @@
         "D. Waitzman IronBridge Networks 1 April 1999"
       ],
       "article":{
-        "title": "IP over Avian Carriers with Quality of Service",
+        "title1": "IP over Avian Carriers with Quality of Service",
         "section":{
           "section1":[
             {
@@ -150,7 +186,7 @@
           ]
         },
         "carnetAdresse":{
-          "title": "Author's Address",
+          "title1": "Author's Address",
           "adresse":[
             "David Waitzman",
             "IronBridge Networks",
@@ -162,7 +198,7 @@
         },
         "copyright":{
           "title2": "Full Copyright Statement",
-          "paragraphe":"Copyright (C) The Internet Society (1999). All Rights Reserved. This document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to the Internet Society or other Internet organizations, except as needed for the purpose of developing Internet standards in which case the procedures for copyrights defined in the Internet Standards process must be followed, or as required to translate it into languages other than English. The limited permissions granted above are perpetual and will not be revoked by the Internet Society or its successors or assigns. This document and the information contained herein is provided on an "AS IS" basis and THE INTERNET SOCIETY AND THE INTERNET ENGINEERING TASK FORCE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE."
+          "paragraphe":"Copyright (C) The Internet Society (1999). All Rights Reserved. This document and translations of it may be copied and furnished to others, and derivative works that comment on or otherwise explain it or assist in its implementation may be prepared, copied, published and distributed, in whole or in part, without restriction of any kind, provided that the above copyright notice and this paragraph are included on all such copies and derivative works. However, this document itself may not be modified in any way, such as by removing the copyright notice or references to the Internet Society or other Internet organizations, except as needed for the purpose of developing Internet standards in which case the procedures for copyrights defined in the Internet Standards process must be followed, or as required to translate it into languages other than English. The limited permissions granted above are perpetual and will not be revoked by the Internet Society or its successors or assigns. This document and the information contained herein is provided on an 'AS IS' basis and THE INTERNET SOCIETY AND THE INTERNET ENGINEERING TASK FORCE DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE."
         }
       }
     },
@@ -188,7 +224,7 @@
             {
               "title2": "Status of this Memo",
               "paragraphe" : "This document is not an Internet Standards Track specification; it is published for informational purposes. This is a contribution to the RFC Series, independently of any other RFC stream. The RFC Editor has chosen to publish this document at its discretion and makes no statement about its value for implementation or deployment. Documents approved for publication by the RFC Editor are not a candidate for any level of Internet Standard; see Section 2 of RFC 5741. Information about the current status of this document, any errata, and how to provide feedback on it may be obtained at <a href='http://www.rfc-editor.org/info/rfc6214'>http://www.rfc-editor.org/info/rfc6214</a>."
-            }
+            },
             {
               "title2": "Copyright Notice",
               "paragraphe" : "Copyright (c) 2011 IETF Trust and the persons identified as the document authors. All rights reserved. This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (<a href='http://trustee.ietf.org/license-info'>http://trustee.ietf.org/license-info</a>) in effect on the date of publication of this document. Please review these documents carefully, as they describe your rights and restrictions with respect to this document."
@@ -239,8 +275,7 @@
                   "11.1. Normative References",
                   "11.2. Informative References"
                 ]
-              },
-
+              }
             ]
           },
           "section2":[

@@ -66,7 +66,7 @@
 }
 
 .logo-size:hover{
-  width: 40.5%;
+  opacity: 0.7;
 }
 
 .title-headband{
@@ -84,6 +84,19 @@
 .btn-link:active{
   background-color: #717171;
   color: white;
+}
+
+.unactive{
+  color: lightgrey;
+  background-color: grey;
+  cursor: not-allowed!important;
+  margin: 0.5em 0.2rem;
+}
+
+.btn-link{
+  color: blue;
+  background-color: lightgrey;
+  margin: 0.5em 0.2rem;
 }
 
 /*BACKGROUND COLOR*/
@@ -111,7 +124,7 @@ a:hover{
 
 nav{
   background-color: #525252;
-  padding: 0.5rem 0;
+  padding: 0 0 0.5rem 0;
   border-top: 1px grey solid;
 }
 
