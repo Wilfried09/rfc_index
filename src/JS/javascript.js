@@ -92,6 +92,10 @@ function createParagraphe(data){
   let result = '';
   for(i in data){
     result = ''+result+"<h2>"+data[i].title2+"</h2>"+"<p>"+data[i].paragraphe+"</p>";
+    console.log(data[i].pre);
+    if(data[i].pre != "undefined"){
+      result = ''+result+"<pre>"+data[i].pre+"</pre>";
+    }
   }
   return result;
 }

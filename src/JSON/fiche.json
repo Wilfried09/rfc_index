@@ -44,12 +44,19 @@
         "section":{
           "section1":[
             {"title2": "Status of this Memo",
-            "paragraphe" : "This memo describes an experimental method for the encapsulation of IP datagrams in avian carriers. This specification is primarily useful in Metropolitan Area Networks. This is an experimental, not recommended standard.  Distribution of this memo is unlimited."
+            "paragraphe" : "This memo defines an Experimental Protocol for the Internet community. It does not specify an Internet standard of any kind. Discussion and suggestions for improvement are requested. Distribution of this memo is unlimited."
+            },
+            {"title2": "Copyright Notice",
+            "paragraphe" : "Copyright (C) The Internet Society (1999).  All Rights Reserved."
+            },
+            {"title2": "Abstract",
+            "paragraphe" : "This memo amends RFC 1149, 'A Standard for the Transmission of IP Datagrams on Avian Carriers', with Quality of Service information. This is an experimental, not recommended standard."
             }
           ],
           "section2":[
             {"title2": "Overview and Rational",
-            "paragraphe" : "Avian carriers can provide high delay, low throughput, and low altitude service.  The connection topology is limited to a single point-to-point path for each carrier, used with standard carriers, but many carriers can be used without significant interference with each other, outside of early spring. This is because of the 3D ether space available to the carriers, in contrast to the 1D ether used by IEEE802.3.  The carriers have an intrinsic collision avoidance system, which increases availability. Unlike some network technologies, such as packet radio, communication is not limited to line-of-sight distance. Connection oriented service is available in some cities, usually based upon a central hub topology."},
+            "paragraphe" : "The following quality of service levels are available: Concorde, First, Business, and Coach. Concorde class offers expedited data delivery. One major benefit to using Avian Carriers is that this is the only networking technology that earns frequent flyer miles, plus the Concorde and First classes of service earn 50% bonus miles per packet. Ostriches are an alternate carrier that have much greater bulk transfer capability but provide slower delivery, and require the use of bridges between domains. The service level is indicated on a per-carrier basis by bar-code markings on the wing. One implementation strategy is for a bar-code reader to scan each carrier as it enters the router and then enqueue it in the proper queue, gated to prevent exit until the proper time. The carriers may sleep while enqueued. For secure networks, carriers may have classes Prime or Choice. Prime carriers are self-keying when using public key encryption. Some distributors have been known to falsely classify Choice carriers as Prime. Packets MAY be marked for deletion using RED paint while enqueued. Weighted fair queueing (WFQ) MAY be implemented using scales, as shown:"
+            },
 
             {"title2": "Frame Format",
             "paragraphe" : "The IP datagram is printed, on a small scroll of paper, in hexadecimal, with each octet separated by whitestuff and blackstuff. The scroll of paper is wrapped around one leg of the avian carrier. A band of duct tape is used to secure the datagram's edges. The bandwidth is limited to the leg length.  The MTU is variable, and paradoxically, generally increases with increased carrier age. A typical MTU is 256 milligrams. Some datagram padding may be needed. Upon receipt, the duct tape is removed and the paper copy of the datagram is optically scanned into a electronically transmittable form."
@@ -79,16 +86,18 @@
       }
     },
     "2549":{
-      "id":"1149",
-      "name": "RFC 1149",
-      "tab": "RFC 1149 - Standard for the transmission of IP datagrams on avian carriers",
+      "id":"2549",
+      "name": "RFC 2549",
+      "tab": "RFC 2549 - IP over Avian Carriers with Quality of Service",
       "header":[
         "Network Working Group",
-        "Request for Comments: 1149",
-        "D. Waitzman BBN STC 1 April 1990"
+        "Request for Comments: 2549",
+        "Updates: 1149",
+        "Category: Experimental",
+        "D. Waitzman IronBridge Networks 1 April 1999"
       ],
       "article":{
-        "title": "A Standard for the Transmission of IP Datagrams on Avian Carriers",
+        "title": "IP over Avian Carriers with Quality of Service",
         "section":{
           "section1":[
             {"title2": "Status of this Memo",
@@ -173,6 +182,6 @@
           ]
         }
       }
-    },
+    }
   }
 }
